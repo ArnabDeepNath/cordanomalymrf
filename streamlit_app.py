@@ -93,7 +93,7 @@ if st.button("Check for defects"):
         # cropped_image = image[:-500, :8000]
 #         cv2.imwrite('cropped_img.png', image)
         if image is not None:
-            pred_img = cv2.imread('cropped_img.png')
+            pred_img = cv2.imread(img_file_buffer)
             gray_pred_img = cv2.cvtColor(pred_img, cv2.COLOR_BGR2GRAY)
             thresh_train = cv2.threshold(gray_pred_img, 0 , 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
             cnts = cv2.findContours(thresh_train, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
