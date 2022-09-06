@@ -8,7 +8,7 @@ from PIL import Image
 
 
 st.title("Cord Spacing Anomaly Prediction")
-
+ret, im = cap.read()
 st.markdown(
     """
     <style>
