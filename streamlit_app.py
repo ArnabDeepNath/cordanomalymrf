@@ -91,7 +91,7 @@ if st.button("Check for defects"):
         image = np.array(Image.open(img_file_buffer))
         # cropped_image = image_resize(image , 500 , 200 )
         # cropped_image = image[:-500, :8000]
-        cv2.imwrite('cropped_img.png', image)
+#         cv2.imwrite('cropped_img.png', image)
         if image is not None:
             pred_img = cv2.imread('cropped_img.png')
             gray_pred_img = cv2.cvtColor(pred_img, cv2.COLOR_BGR2GRAY)
