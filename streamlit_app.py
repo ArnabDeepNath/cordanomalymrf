@@ -24,7 +24,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.image('logo2.png',width=100)
+# st.sidebar.image('logo2.png',width=100)
 st.sidebar.title('In service of MRF Tyres')
 st.sidebar.subheader('Developed at Caliche Labs')
 st.sidebar.subheader('Parameters')
